@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        HTML {
+            height: 100%;
+            background: #876666;
+
+        }
+
+        DIV {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: rgb(15, 23, 24);
+            background-image:url(https://img-fotki.yandex.ru/get/3111/5091629.a2/0_85f54_7fb379e6_orig), 
+             linear-gradient(45deg, white 50%, transparent 50%); */
+            linear-gradient(-45deg, white 50%, transparent 50%); */
+            background-repeat: no-repeat, repeat, repeat;
+            background-position:
+                50% -15%,
+                50% -50%,
+                50% -50%;
+            background-blend-mode:
+                difference;
+            background-size: auto, 5em 5em, 5em 5em;
+            border-redius: 50%;
+            box-shadow: 0px 0px 10px 5px #63a2c4;
+            animation: move 1.68s infinite ease-out;
+
+        }
+
+        @keyframes move {
+            50% {
+                background-position:
+                    50% 95%,
+                    50% 50% 50% 50%;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+</body>
+
+</html>
