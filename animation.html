@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        h1{
+            width: 200px;
+            border: 2px solid rebeccapurple;
+            transition: width 0.s;
+            transition-delay: 0.1s;
+        }
+         h1:hover{
+            width: 700px;
+        }
+        img{
+            animation-name:priya;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in; 
+        }
+        @keyframes priya{
+           from{height:50px}
+            to{height: 200px}
+        } 
+
+        p{
+            animation-name: saloni;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            border: rebeccapurple;
+            background-color: aquamarine;
+            font-size: 30px;
+        }
+
+        @keyframes saloni{
+            from{font-size: 25px;}
+            to{
+                font-size: 100px; border: double red; background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="w3.jpg" alt="">
+    
+    <div>
+        <img src="w1.jpeg" alt="">
+        <h1>saloni</h1>
+    </div>
+
+    <p>hello</p>
+</body>
+</html>
