@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Onboarding UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex items-start justify-center bg-gray-100 px-4 py-8">
+  <!-- Flex container for 3 cards -->
+  <div class="flex flex-col md:flex-row gap-6 flex-wrap justify-center">
+
+    <!-- First Card -->
+    <div class="max-w-sm w-90 h-70 bg-white rounded-2xl shadow-lg p-6 text-center">
+      <div class="mb-6">
+        <img src="logo.jpg" alt="Illustration" class="mx-auto w-full h-auto" />
+      </div>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-2 leading-snug">
+        <b>Choose The Best <br class="hidden sm:inline" />
+        Workspace For You</b>
+      </h2>
+      <p class="text-gray-500 text-sm mb-6">Lorem ipsum dolor</p>
+      <button class="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition">
+        Get Started
+      </button>
+    </div>
+
+    <!-- Second Card -->
+    <div class="w-[360px] bg-white rounded-2xl p-5 shadow-sm">
+      <div class="flex justify-between items-start mb-5">
+        <div>
+          <h1 class="text-lg font-semibold leading-snug text-gray-900">
+            Find The best<br />
+            <span class="font-bold">Workspace For You</span>
+          </h1>
+        </div>
+        <button class="text-2xl text-gray-500">&#9776;</button>
+      </div>
+      <div class="relative mb-6">
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg">🔍</span>
+        <input type="text" placeholder="Search Space"
+          class="w-full border border-gray-300 rounded-xl py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300" />
+      </div>
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Categories</h2>
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <div class="border rounded-xl py-4 flex flex-col items-center text-sm font-medium text-gray-700 hover:shadow transition">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/desk.png" class="w-6 h-6 mb-1" /> Desk
+        </div>
+        <div class="border rounded-xl py-4 flex flex-col items-center text-sm font-medium text-gray-700 hover:shadow transition">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/home.png" class="w-6 h-6 mb-1" /> Private
+        </div>
+        <div class="border rounded-xl py-4 flex flex-col items-center text-sm font-medium text-gray-700 hover:shadow transition">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/conference-call.png" class="w-6 h-6 mb-1" /> Meeting
+        </div>
+        <div class="bg-purple-100 text-purple-700 rounded-xl py-4 flex flex-col items-center text-sm font-medium">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/overview-pages-3.png" class="w-6 h-6 mb-1" /> All
+        </div>
+      </div>
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Recent Booking</h2>
+      <div class="bg-white border rounded-xl p-4 shadow-sm">
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-base font-bold text-gray-900">Green Garden</p>
+            <p class="text-sm text-gray-500">123 Meridian Street, Boston</p>
+          </div>
+          <div class="flex items-center text-purple-600 font-semibold text-sm">
+            <span class="text-xl mr-1">★</span> 4.6
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Card -->
+    <div class="w-[360px] bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div class="bg-purple-100 relative h-28 p-4">
+        <div class="absolute top-4 left-4 text-xl">&lt;</div>
+        <div class="absolute top-2 right-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="black">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v5m0 4v.01M12 14a4 4 0 00-4 4h8a4 4 0 00-4-4z" />
+          </svg>
+        </div>
+      </div>
+      <div class="-mt-8 bg-white rounded-t-3xl px-5 pt-10 pb-6">
+        <div class="flex justify-between items-center">
+          <h1 class="text-xl font-bold text-gray-800">Green Garden</h1>
+          <div class="text-purple-600 text-sm flex items-center font-medium">★ 4.6</div>
+        </div>
+        <p class="text-sm text-gray-500 mt-1">📍 123 Meridian Street, Boston</p>
+        <h2 class="mt-5 text-sm font-semibold text-gray-700">Book Now</h2>
+        <div class="flex gap-3 mt-2">
+          <div class="w-1/2 border rounded-lg px-3 py-2 text-sm text-gray-700 flex items-center">📅 <span
+              class="ml-2">Feb 08</span></div>
+          <div class="w-1/2 border rounded-lg px-3 py-2 text-sm text-gray-700 flex items-center">🕒 <span
+              class="ml-2">2 PM - 4 PM</span></div>
+        </div>
+        <button
+          class="w-full bg-purple-500 text-white mt-4 py-2 rounded-full text-sm font-medium hover:bg-purple-600 transition">
+          Book Desk
+        </button>
+        <h2 class="mt-6 text-sm font-semibold text-gray-700">Details</h2>
+        <p class="text-sm text-gray-500 mt-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dolpur us sita...
+          <span class="text-purple-500">See more</span>
+        </p>
+        <div class="flex justify-around mt-4 text-sm text-gray-600">
+          <div class="flex flex-col items-center">📶 <span>Wi-Fi</span></div>
+          <div class="flex flex-col items-center">☕ <span>Cafe</span></div>
+          <div class="flex flex-col items-center">💻 <span>AC</span></div>
+        </div>
+        <div class="mt-6 px-4">
+          <h2 class="text-sm font-semibold text-gray-700 mb-4">Crowd Rate</h2>
+          <div class="flex justify-between items-end h-24">
+            <div class="flex flex-col items-center">
+              <div class="w-4 h-5 bg-purple-100 rounded-md"></div>
+              <span class="text-xs mt-1">9am</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="w-4 h-6 bg-purple-200 rounded-md"></div>
+              <span class="text-xs mt-1">11am</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="w-4 h-10 bg-purple-500 rounded-md"></div>
+              <span class="text-xs mt-1">12am</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="w-4 h-7 bg-purple-200 rounded-md"></div>
+              <span class="text-xs mt-1">2pm</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="w-4 h-3 bg-purple-100 rounded-md"></div>
+              <span class="text-xs mt-1">4pm</span>
+            </div>
+          </div>
+          <p class="text-xs text-center text-gray-500 mt-2">
+            Most visited on <span class="text-purple-600 font-medium">Monday</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
