@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workspace Finder UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="w-360px bg-white rounded-2xl p-5 shadow-sm">
+
+      <!-- Header -->
+      <div class="flex justify-between items-start mb-5">
+        <div>
+          <h1 class="text-lg font-semibold leading-snug text-gray-900">
+            Find The best<br />
+            <span class="font-bold">Workspace For You</span>
+          </h1>
+        </div>
+        <button class="text-2xl text-gray-500">&#9776;</button>
+      </div>
+
+      <!-- Search -->
+      <div class="relative mb-6">
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg">🔍</span>
+        <input
+          type="text"
+          placeholder="Search Space"
+          class="w-full border border-gray-300 rounded-xl py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-purple-300"
+        />
+      </div>
+
+      <!-- Categories -->
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Categories</h2>
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <!-- Desk -->
+        <div class="border rounded-xl py-4 flex flex-col items-center text-sm font-medium text-gray-700 hover:shadow transition">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/desk.png" class="w-6 h-6 mb-1" />
+          Desk
+        </div>
+        <!-- Private -->
+        <div class="border rounded-xl py-4 flex flex-col items-center text-sm font-medium text-gray-700 hover:shadow transition">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/home.png" class="w-6 h-6 mb-1" />
+          Private
+        </div>
+        <!-- Meeting -->
+        <div class="border rounded-xl py-4 flex flex-col items-center text-sm font-medium text-gray-700 hover:shadow transition">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/conference-call.png" class="w-6 h-6 mb-1" />
+          Meeting
+        </div>
+        <!-- All -->
+        <div class="bg-purple-100 text-purple-700 rounded-xl py-4 flex flex-col items-center text-sm font-medium">
+          <img src="https://img.icons8.com/ios-filled/50/9B59B6/overview-pages-3.png" class="w-6 h-6 mb-1" />
+          All
+        </div>
+      </div>
+
+      <!-- Recent Booking -->
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Recent Booking</h2>
+      <div class="bg-white border rounded-xl p-4 shadow-sm">
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-base font-bold text-gray-900">Green Garden</p>
+            <p class="text-sm text-gray-500">123 Meridian Street, Boston</p>
+          </div>
+          <div class="flex items-center text-purple-600 font-semibold text-sm">
+            <span class="text-xl mr-1">★</span> 4.6
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
